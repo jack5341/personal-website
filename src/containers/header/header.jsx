@@ -1,9 +1,10 @@
 import { Headline1, Headline2 } from "../../components/headline/headline";
+import { DownIcon } from "../../components/icon";
 import Label from "../../components/label/label";
 
 export default function Header() {
     return (
-        <div className="py-10 md:py-32 px-5 grid grid-cols-1 grid-flow-row-dense lg:grid-cols-3 gap-4">
+        <div className="py-10 md:py-32 ml-5 md:ml-0 grid grid-cols-1 lg:grid-cols-3 gap-4 mx-5 md:mb-0">
             <div className="flex justify-center flex-col mb-5 md:mb-0">
                 <Headline1>
                     Hello I'm <br /> Nedim Akar
@@ -14,7 +15,10 @@ export default function Header() {
                 </Label>
             </div>
             <div className="col-span-2 flex flex-col justify-center">
-                <Headline2 classnames="text-gray-500">A senior-year design student who trying to specialize in 3D modeling & texturing.</Headline2>
+                <Headline2 classnames="text-gray-500">
+                    Software Developer interested in <span className="text-blue-600">Cloud</span> <span className="text-red-600">Infrastructer</span>{" "}
+                    <span className="text-yellow-500">Engineer</span> & <span className="text-green-600">Open Source</span> lover.
+                </Headline2>
             </div>
         </div>
     );

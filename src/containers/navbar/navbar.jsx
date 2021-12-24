@@ -14,9 +14,9 @@ export default function Navbar() {
                 <HamburgerIcon className="w-10 h-10 absolute right-0 m-5 mt-16" />
             </div>
             <ul className="flex h-screen items-center justify-center flex-col">
-                <NavLink classnames="my-3 text-4xl font-bold" url="www.github.com" label="Contact" />
-                <NavLink classnames="my-3 text-4xl font-bold" url="www.github.com" label="Playground" />
-                <NavLink classnames="my-3 text-4xl font-bold" url="www.github.com" label="About" />
+                <NavLink classnames="my-3 text-4xl font-bold" url="mailTo:nedim.akar53411@gmail.com" label="Contact" />
+                <NavLink classnames="my-3 text-4xl font-bold" url="https://www.linkedin.com/in/nedim-akar/" label="LinkedIn" />
+                <NavLink classnames="my-3 text-4xl font-bold" url="https://github.com/jack5341/personal-website" label="Github" />
             </ul>
         </div>
     ) : (
@@ -28,9 +28,9 @@ export default function Navbar() {
                 </div>
             ) : (
                 <ul className="flex">
-                    <NavLink url="www.github.com" label="Contact" />
-                    <NavLink url="www.github.com" label="Playground" />
-                    <NavLink url="www.github.com" label="About" />
+                    <NavLink url="www.github.com" url="mailTo:nedim.akar53411@gmail.com" label="Contact" />
+                    <NavLink url="https://www.linkedin.com/in/nedim-akar/" label="LinkedIn" />
+                    <NavLink url="https://github.com/jack5341/personal-website" label="Github" />
                 </ul>
             )}
         </nav>

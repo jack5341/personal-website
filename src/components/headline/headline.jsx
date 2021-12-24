@@ -1,7 +1,7 @@
 import PropTypes from "prop-types";
 
 export function Headline1(p) {
-    return <h1 className={"text-6xl font-extrabold" + p.classnames}>{p.children}</h1>;
+    return <h1 className={"text-6xl font-extrabold " + p.classnames}>{p.children}</h1>;
 }
 
 Headline1.propTypes = {

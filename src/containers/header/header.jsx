@@ -4,9 +4,9 @@ import Label from "../../components/label/label";
 
 export default function Header() {
     return (
-        <div className="py-10 md:py-32 ml-5 md:ml-0 grid grid-cols-1 lg:grid-cols-3 gap-4 mx-5 md:mb-0">
+        <div className="py-0 md:py-32 ml-5 md:ml-0 grid grid-cols-1 lg:grid-cols-3 gap-4 mx-5 md:mb-0">
             <div className="flex justify-center flex-col mb-5 md:mb-0">
-                <Headline1>
+                <Headline1 classnames="mb-3">
                     Hello I'm <br /> Nedim Akar
                 </Headline1>
                 <Label>

@@ -2,7 +2,12 @@ import PropTypes from "prop-types";
 
 export function Link(p) {
     return (
-        <a href={p.url} target={p.isBlank ? "_blank" : null} className={"text-lg underline underline-offset-4 " + p.classnames} rel="noreferrer">
+        <a
+            href={p.url}
+            target={p.isBlank ? "_blank" : null}
+            className={"text-xs lg:text-lg underline underline-offset-4 " + p.classnames}
+            rel="noreferrer"
+        >
             {p.label + (p.withArrow ? " ↗" : "")}
         </a>
     );

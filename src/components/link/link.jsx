@@ -19,7 +19,7 @@ Link.propTypes = {
 
 export function NavLink(p) {
     return (
-        <a href={p.url} target={p.isBlank ? "_blank" : null} className={"text-xl mx-4 " + p.classnames} rel="noreferrer">
+        <a href={p.url} target={p.isBlank ? "_blank" : null} className={"text-base mx-4 " + p.classnames} rel="noreferrer">
             {p.label + (p.withArrow ? "↗" : "")}
         </a>
     );

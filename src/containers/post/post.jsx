@@ -4,7 +4,7 @@ import { Link } from "../../components/link/link";
 
 export default function Post() {
     return (
-        <div className={"h-auto lg:h-120 w-full border-b-2 grid grid-cols-1 lg:grid-cols-4 gap-4 mx-5 md:mx-0"}>
+        <div className={"h-auto lg:h-120 w-full border-b-2 grid grid-cols-1 lg:grid-cols-4 pl-5 md:pl-0"}>
             <div className="col-span-1 xl:col-span-2 m-10 ml-0 mx-4">
                 <div>
                     <Label>{"02/07/2001"}</Label>

@@ -16,7 +16,7 @@ export default function Header() {
             </div>
             <div className="col-span-2 flex flex-col justify-center">
                 <Headline2 classnames="text-gray-500">
-                    Software Developer interested in <span className="text-blue-600">Cloud</span> <span className="text-red-600">Infrastructer</span>{" "}
+                    Software Developer interested in <span className="text-blue-600">Cloud</span> <span className="text-red-600">Infrastructure</span>{" "}
                     <span className="text-yellow-500">Engineer</span> & <span className="text-green-600">Open Source</span> lover.
                 </Headline2>
             </div>

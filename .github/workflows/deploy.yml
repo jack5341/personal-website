@@ -1,5 +1,11 @@
 name: remote ssh command
-on: [push]
+on: 
+  push: 
+    branches:    
+      - master 
+  pull_request: 
+    branches:
+      - master
 jobs:
 
   build:
@@ -12,4 +18,4 @@ jobs:
         host: ${{ secrets.HOST }}
         username: root
         key: ${{ secrets.KEY }}
-        script: echo "hello" 
+        script: cd /root/personal-website && git pull && cd /home && docker-compose up -d --build 

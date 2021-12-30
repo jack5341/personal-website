@@ -1,18 +1,15 @@
-name: Continuous Integration
+name: remote ssh command
 on: [push]
-
 jobs:
-  deploy:    
+
+  build:
+    name: Build
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
-      - name: Deploy source-code
-        uses: appleboy/scp-action@master
-        env:
-          HOST: ${{ secrets.HOST }}
-          USERNAME: ${{ secrets.USERNAME }}
-          PORT: 22
-          KEY: ${{ secrets.KEY }}
-        with:
-          source: "*"
-          target: "."
+    - name: executing remote ssh commands using password
+      uses: appleboy/ssh-action@master
+      with:
+        host: ${{ secrets.HOST }}
+        username: root
+        key: ${{ secrets.KEY }}
+        script: echo "hello" 
